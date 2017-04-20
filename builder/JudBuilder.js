@@ -57,7 +57,7 @@ class JudBuilder extends WebpackBuilder {
         let vueLoader = loadModulePath('vue-loader')
 
         this.config.module.loaders.push({
-            test: /\.ju((\?[^?]+)?$/,
+            test: /\.ju(\?[^?]+)?$/,
             loader: judLoader
         })
         if (this.options.web) {
